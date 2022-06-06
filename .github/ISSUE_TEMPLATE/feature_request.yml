@@ -1,0 +1,20 @@
+name: Feature Request
+description: Suggest a feature
+title: "Feature: <Title>"
+labels: ["enhancement"]
+body:
+- type: dropdown
+  attributes:
+    label: Which component should be improved?
+    options: [Audio, Render, Gameplay, UI/UX, Other]
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Describe your suggestion
+    description: Give a clear explanation of what you want us to add. Feel free to add pictures or video!
+    placeholder: |
+      Please don't give vague suggestions like "Make button look better".
+      Think, how does it work. What are the ways to interact with it? What is the expected outcome?
+  validations:
+    required: true
